@@ -1,0 +1,28 @@
+CREATE TABLE IF NOT EXISTS users (
+id BIGINT AUTO_INCREMENT PRIMARY KEY,
+username VARCHAR(100) UNIQUE NOT NULL,
+password VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS project (
+id BIGINT AUTO_INCREMENT PRIMARY KEY,
+name VARCHAR(255) NOT NULL,
+description TEXT,
+created_at DATETIME,
+updated_at DATETIME,
+user_id BIGINT,
+CONSTRAINT fk_project_user FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS task (
+id BIGINT AUTO_INCREMENT PRIMARY KEY,
+title VARCHAR(255) NOT NULL,
+description TEXT,
+status VARCHAR(50),
+priority VARCHAR(50),
+due_date DATE,
+created_at DATETIME,
+updated_at DATETIME,
+project_id BIGINT,
+CONSTRAINT fk_task_project FOREIGN KEY (project_id) REFERENCES project(id) ON DELETE CASCADE
+);
