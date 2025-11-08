@@ -80,6 +80,10 @@ project_id BIGINT,
 CONSTRAINT fk_task_project FOREIGN KEY (project_id) REFERENCES project(id) ON DELETE CASCADE
 );
 
+![Table Creation Query](<Screenshot 2025-11-08 173856.png>) 
+![Table](<Screenshot 2025-11-08 173802.png>)
+![Data in Tables](<Screenshot 2025-11-08 173817.png>)
+
 
 ###Build and Run:
 mvn clean install
