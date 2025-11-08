@@ -38,7 +38,7 @@ A complete backend application to manage users, projects, and tasks using **Spri
 
 ### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/<your-username>/project-management-api.git
+[git clone https://github.com/<your-username>/project-management-api.git](https://github.com/ThengdeNitin/Mini-ProjectMgmt.git)
 cd project-management-api
 ```
 
