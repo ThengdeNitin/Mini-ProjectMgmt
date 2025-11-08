@@ -103,8 +103,8 @@ mvn spring-boot:run
 | GET | /api/tasks/project/{projectId} | Get tasks by project |
 | PUT | /api/tasks/{taskId} | Update task |
 | DELETE | /api/tasks/{taskId} | Delete task |
-| GET | /api/tasks/search?query= | Search tasks |
-| GET | /api/tasks/sort?sortBy= | Sort tasks |
+| GET | /api/tasks/sort?sortBy=priority | Search tasks |
+| GET | /api/tasks/sort?sortBy=dueDate | Sort tasks |
 
 
 🔑 Authentication
