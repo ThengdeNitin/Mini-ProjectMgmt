@@ -81,7 +81,7 @@ CONSTRAINT fk_task_project FOREIGN KEY (project_id) REFERENCES project(id) ON DE
 );
 
 
-###Build and Run
+###Build and Run:
 mvn clean install
 mvn spring-boot:run
 
@@ -107,4 +107,4 @@ mvn spring-boot:run
 
 All endpoints except /api/auth/** require a Bearer Token.
 
-Example Header: Authorization: Bearer <your-jwt-token>
+Example Header: Authorization: Bearer eyJhbGciOiJIUzM4NCJ9.eyJzdWIiOiJOaXRpbiBUaGVuZ2RlIiwiaWF0IjoxNzYyNjAxNDUxLCJleHAiOjE3NjI2ODc4NTF9.mKD2qR1UKLF3UG6o65DjNHfQlINwfsTaqsb3eBo48ZT57wnSkB4MEO_leggdva5f
